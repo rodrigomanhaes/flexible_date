@@ -6,7 +6,9 @@ module FlexibleDate
       define_method "#{field}_flex=" do |value|
         self.send("#{field}=", Date.strptime(value, format))
       end
-      attr_reader "#{field}_flex"
+      define_method "#{field}_flex" do
+        self.send("#{field}").strftime(format)
+      end
     end
   end
 end

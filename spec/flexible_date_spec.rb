@@ -20,5 +20,12 @@ describe 'flexible date' do
     event.start_date.should == Date.new(2011, 01, 31)
     event.end_date.should == Date.new(2011, 02, 28)
   end
+
+  it 'returns dates formatted as configured' do
+    event = Event.new :start_date => '2011-01-31',
+                      :end_date => Date.new(2011, 02, 28)
+    event.start_date_flex.should == "31/01/2011"
+    event.end_date_flex.should == "28/02/2011"
+  end
 end
 
