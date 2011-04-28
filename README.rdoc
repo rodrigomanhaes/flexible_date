@@ -1,19 +1,55 @@
 = flexible_date
 
-Description goes here.
+Make ActiveRecord understand any date format you want.
 
-== Contributing to flexible_date
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+== How to use
+
+Simply do, within your model:
+
+    flexible_date :my_date_field, :format => "%d/%m/%Y"
+
+The format follows the same pattern used by strptime and strftime. This will
+generate a my_date_field_flex "property" in which you can enter the date as
+string in the specified format and then the correct date will be stored in
+my_date_field.
+
+Talk is cheap, let's see the code:
+
+    class Event < ActiveRecord::Base
+      flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
+    end
+
+    event = Event.new
+    event.start_date_flex = "31/01/2011"
+    event.end_date_flex =  "28/02/2011"
+    event.start_date.should == Date.new(2011, 01, 31)
+    event.end_date.should == Date.new(2011, 02, 28)
+
+
+And values assigned to regular fields are returned by _flex fields in the
+specified format:
+
+    event = Event.new :start_date => '2011-01-31',
+                      :end_date => Date.new(2011, 02, 28)
+    event.start_date_flex.should == "31/01/2011"
+    event.end_date_flex.should == "28/02/2011"
+
+
+== How to install
+
+flexible_date will become a gem very soon.
+
+
+== Do you know a better/standard solution?
+
+My intention is to allow users typing dates directly to text fields in their
+own local format. I didn't find a solution for this problem in Rails itself.
+If you have a better solution, please let me know.
+
+No, default select fields, separated by day, month and year are not a solution.
+
 
 == Copyright
 
-Copyright (c) 2011 Rodrigo Manhães. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Rodrigo Manhães. See LICENSE.txt for further details.
 
