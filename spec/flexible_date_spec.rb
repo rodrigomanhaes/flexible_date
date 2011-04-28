@@ -12,5 +12,13 @@ describe 'flexible date' do
     event.should respond_to(:end_date_flex)
     event.should respond_to(:end_date_flex=)
   end
+
+  it 'converts formatted inputs to respective fields' do
+    event = Event.new
+    event.start_date_flex = "31/01/2011"
+    event.end_date_flex =  "28/02/2011"
+    event.start_date.should == Date.new(2011, 01, 31)
+    event.end_date.should == Date.new(2011, 02, 28)
+  end
 end
 

@@ -1,7 +1,13 @@
 module FlexibleDate
   def flexible_date(*params)
     options, fields = params.pop, params
-    fields.each {|f| attr_accessor "#{f}_flex".to_sym }
+    format = options[:format]
+    fields.each do |field|
+      define_method "#{field}_flex=" do |value|
+        self.send("#{field}=", Date.strptime(value, format))
+      end
+      attr_reader "#{field}_flex"
+    end
   end
 end
 
