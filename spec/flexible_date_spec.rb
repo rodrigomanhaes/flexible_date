@@ -44,14 +44,5 @@ describe 'flexible date' do
       event.start_date_flex.should be_nil
     end
   end
-
-  it 'registers nil for blank values' do
-    event = Event.new
-    event.start_date_flex.should be_nil
-
-    event.start_date_flex = ''
-    event.start_date_flex.should be_nil
-    event.start_date.should be_nil
-  end
 end
 
