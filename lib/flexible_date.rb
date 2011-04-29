@@ -3,7 +3,17 @@ module FlexibleDate
     options, fields = params.pop, params
     format = options[:format]
     fields.each do |field|
-      validate :flexible_date_validations
+      unless methods.include?(:flexible_date_validations)
+        validate :flexible_date_validations
+
+        define_method :flexible_date_validations do
+          if @flexible_date_errors
+            @flexible_date_errors.each do |field, message|
+              errors.add(field, message)
+            end
+          end
+        end
+      end
 
       define_method "#{field}_flex" do
         date = self.send("#{field}")
@@ -18,14 +28,6 @@ module FlexibleDate
           @flexible_date_errors ||= {}
           @flexible_date_errors["#{field}".to_sym] = 'invalid'
           @flexible_date_errors["#{field}_flex".to_sym] = 'invalid'
-        end
-      end
-
-      define_method :flexible_date_validations do
-        if @flexible_date_errors
-          @flexible_date_errors.each do |field, message|
-            errors.add(field, message)
-          end
         end
       end
     end
