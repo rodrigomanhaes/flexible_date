@@ -6,7 +6,8 @@ module FlexibleDate
       validate :flexible_date_validations
 
       define_method "#{field}_flex" do
-        self.send("#{field}").strftime(format)
+        date = self.send("#{field}")
+        date.try(:strftime, format)
       end
 
       define_method "#{field}_flex=" do |value|
