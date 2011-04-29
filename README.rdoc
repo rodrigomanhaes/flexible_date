@@ -37,7 +37,9 @@ specified format:
 
 == How to install
 
-flexible_date will become a gem very soon.
+Just run:
+
+    gem install flexible_date
 
 
 == Do you know a better/standard solution?

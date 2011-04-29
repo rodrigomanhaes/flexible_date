@@ -1,4 +1,5 @@
 .rvmrc
+*.gem
 
 # rcov generated
 coverage

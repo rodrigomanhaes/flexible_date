@@ -1,0 +1,6 @@
+0.1.0
+
+* parse dates from a given format
+* generates ActiveRecord errors for invalid dates
+* provides formatted dates
+
