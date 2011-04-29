@@ -28,12 +28,21 @@ describe 'flexible date' do
     event.end_date_flex.should == "28/02/2011"
   end
 
-  it 'invalidates the model when date is not valid' do
-    event = Event.new
-    event.start_date_flex = "31/04/2010"
-    event.should_not be_valid
-    event.errors[:start_date_flex].should be_any
-    event.errors[:start_date].should be_any
+  context 'for invalid dates' do
+    it 'invalidates the model' do
+      event = Event.new
+      event.start_date_flex = "31/04/2010"
+      event.should_not be_valid
+      event.errors[:start_date_flex].should be_any
+      event.errors[:start_date].should be_any
+    end
+
+    it 'assigns nil' do
+      event = Event.new
+      event.start_date_flex = '30/04/2010'
+      event.start_date_flex = '31/04/2010'
+      event.start_date_flex.should be_nil
+    end
   end
 
   it 'registers nil for blank values' do

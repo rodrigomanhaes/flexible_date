@@ -14,6 +14,7 @@ module FlexibleDate
         begin
           self.send("#{field}=", Date.strptime(value, format))
         rescue ArgumentError
+          self.send("#{field}=", nil)
           @flexible_date_errors ||= {}
           @flexible_date_errors["#{field}".to_sym] = 'invalid'
           @flexible_date_errors["#{field}_flex".to_sym] = 'invalid'
