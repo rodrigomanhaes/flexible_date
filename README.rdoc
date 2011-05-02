@@ -35,6 +35,16 @@ specified format:
     event.end_date_flex.should == "28/02/2011"
 
 
+Suffix can be customized:
+
+    class Event < ActiveRecord::Base
+      flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
+
+    event = Event.new
+    event.judgement_day_yyz = "28-02-2011"
+    event.judgement_day.should == Date.new(2011, 02, 28)
+
+
 == How to install
 
 Just run:

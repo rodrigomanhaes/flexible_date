@@ -4,6 +4,7 @@ class CreateTestingStructure < ActiveRecord::Migration
       t.string :description
       t.date :start_date
       t.date :end_date
+      t.date :judgement_day
     end
   end
 
