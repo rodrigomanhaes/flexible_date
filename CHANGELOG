@@ -4,3 +4,7 @@
 * generates ActiveRecord errors for invalid dates
 * provides formatted dates
 
+0.1.1
+
+* support to suffix customization
+
