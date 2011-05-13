@@ -2,7 +2,9 @@ br:
   flexible_date:
     messages:
       with_suffix:
-        error: "inválido."
+        invalid: "inválida."
+        empty: "não pode ser vazia."
       without_suffix:
-        error: "não pode ser vazio."
+        invalid: "inválida."
+        empty: "não pode ser vazia."
 
