@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module FlexibleDate
   def flexible_date(*params)
     options, fields = params.pop, params
@@ -27,8 +28,8 @@ module FlexibleDate
         rescue ArgumentError
           self.send("#{field}=", nil)
           @flexible_date_errors ||= {}
-          @flexible_date_errors["#{field}".to_sym] = 'invalid'
-          @flexible_date_errors["#{field}_#{suffix}".to_sym] = 'invalid'
+          @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.error")
+          @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.error")
         end
       end
     end

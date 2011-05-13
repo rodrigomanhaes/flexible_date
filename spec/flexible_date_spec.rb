@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require File.join(File.dirname(__FILE__), 'spec_helper')
 
 class Event < ActiveRecord::Base
@@ -53,5 +54,28 @@ describe 'flexible date' do
       event.start_date_flex.should be_nil
     end
   end
+
+  context 'customize error messages with I18n' do
+
+    it 'default_locale br' do
+      I18n.locale = :br
+      event = Event.new
+      event.start_date_flex = "31/04/2010"
+      event.valid?.should be_false
+      event.errors[:start_date_flex].should == ["inválido."]
+      event.errors[:start_date].should == ["não pode ser vazio."]
+    end
+
+    it 'defaul_locale en' do
+      I18n.locale = :en
+      event = Event.new
+      event.start_date_flex = "31/04/2010"
+      event.valid?.should be_false
+      event.errors[:start_date_flex].should == ["invalid."]
+      event.errors[:start_date].should == ["should not be empty."]
+    end
+
+  end
+
 end
 

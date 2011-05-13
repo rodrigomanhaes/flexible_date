@@ -1,0 +1,8 @@
+br:
+  flexible_date:
+    messages:
+      with_suffix:
+        error: "inválido."
+      without_suffix:
+        error: "não pode ser vazio."
+

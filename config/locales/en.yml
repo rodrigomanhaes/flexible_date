@@ -1,0 +1,8 @@
+en:
+  flexible_date:
+    messages:
+      with_suffix:
+        error: "invalid."
+      without_suffix:
+        error: "should not be empty."
+
