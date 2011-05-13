@@ -57,22 +57,47 @@ describe 'flexible date' do
 
   context 'customize error messages with I18n' do
 
-    it 'default_locale br' do
-      I18n.locale = :br
-      event = Event.new
-      event.start_date_flex = "31/04/2010"
-      event.valid?.should be_false
-      event.errors[:start_date_flex].should == ["inválido."]
-      event.errors[:start_date].should == ["não pode ser vazio."]
+    context 'default_locale br' do
+
+      before(:each) { I18n.locale = :br }
+
+      it 'invalid date' do
+        event = Event.new
+        event.start_date_flex = "31/04/2010"
+        event.valid?.should be_false
+        event.errors[:start_date_flex].should == ["inválida."]
+        event.errors[:start_date].should == ["inválida."]
+      end
+
+      it 'empty date' do
+        event = Event.new
+        event.start_date_flex = ""
+        event.valid?.should be_false
+        event.errors[:start_date_flex].should == ["não pode ser vazia."]
+        event.errors[:start_date].should == ["não pode ser vazia."]
+      end
+
     end
 
-    it 'defaul_locale en' do
-      I18n.locale = :en
-      event = Event.new
-      event.start_date_flex = "31/04/2010"
-      event.valid?.should be_false
-      event.errors[:start_date_flex].should == ["invalid."]
-      event.errors[:start_date].should == ["should not be empty."]
+    context 'defaul_locale en' do
+
+      before(:each) { I18n.locale = :en }
+
+      it 'invalid date' do
+        event = Event.new
+        event.start_date_flex = "31/04/2010"
+        event.valid?.should be_false
+        event.errors[:start_date_flex].should == ["invalid."]
+        event.errors[:start_date].should == ["invalid."]
+      end
+
+      it 'empty date' do
+        event = Event.new
+        event.start_date_flex = ""
+        event.valid?.should be_false
+        event.errors[:start_date_flex].should == ["can't be empty."]
+        event.errors[:start_date].should == ["can't be empty."]
+      end
     end
 
   end
