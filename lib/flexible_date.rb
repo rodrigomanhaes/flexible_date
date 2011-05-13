@@ -23,13 +23,18 @@ module FlexibleDate
       end
 
       define_method "#{field}_#{suffix}=" do |value|
-        begin
-          self.send("#{field}=", Date.strptime(value, format))
-        rescue ArgumentError
-          self.send("#{field}=", nil)
-          @flexible_date_errors ||= {}
-          @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.error")
-          @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.error")
+        @flexible_date_errors ||= {}
+        if value.blank?
+          @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.empty")
+          @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.empty")
+        else
+          begin
+            self.send("#{field}=", Date.strptime(value, format))
+          rescue ArgumentError
+            self.send("#{field}=", nil)
+            @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.invalid")
+            @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.invalid")
+          end
         end
       end
     end
