@@ -1,5 +1,7 @@
 br:
   flexible_date:
+    configuration:
+      format: "%d/%m/%Y"
     messages:
       with_suffix:
         invalid: "inválida."
