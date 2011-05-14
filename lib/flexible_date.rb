@@ -1,8 +1,7 @@
 # -*- encoding : utf-8 -*-
 module FlexibleDate
   def flexible_date(*params)
-    options, fields = params.pop, params
-    format = options[:format]
+    params.last.kind_of?(Hash) ? (options, fields = params.pop, params) : (options, fields = {}, params)
     suffix = options[:suffix] || "flex"
     fields.each do |field|
       unless methods.include?(:flexible_date_validations)
@@ -18,6 +17,7 @@ module FlexibleDate
       end
 
       define_method "#{field}_#{suffix}" do
+        format = I18n.t("flexible_date.configuration.format")
         date = self.send("#{field}")
         date.try(:strftime, format)
       end
@@ -29,6 +29,7 @@ module FlexibleDate
           @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.empty")
         else
           begin
+            format = I18n.t("flexible_date.configuration.format")
             self.send("#{field}=", Date.strptime(value, format))
           rescue ArgumentError
             self.send("#{field}=", nil)
