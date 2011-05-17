@@ -12,7 +12,6 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/rodrigomanhaes/flexible_date'
   s.summary = 'Make possible enter date fields in any format into your ActiveRecord models'
 
-  s.has_rdoc = true
   s.rdoc_options = ['--charset=UTF-8']
   s.require_paths = ['lib']
 
@@ -21,4 +20,3 @@ Gem::Specification.new do |s|
   s.add_development_dependency('sqlite3-ruby', '~> 1.3.0')
   s.add_development_dependency('rspec', '~> 2.5.0')
 end
-
