@@ -3,10 +3,6 @@ en:
     configuration:
       format: "%d-%m-%Y"
     messages:
-      with_suffix:
-        invalid: "invalid."
-        empty: "can't be empty."
-      without_suffix:
-        invalid: "invalid."
-        empty: "can't be empty."
+      invalid: "invalid."
+      empty: "can't be empty."
 

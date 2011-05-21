@@ -23,18 +23,34 @@ module FlexibleDate
       end
 
       define_method "#{field}_#{suffix}=" do |value|
+        try_t = lambda do |option1, option2|
+          begin
+            I18n.t option1, :raise => true
+          rescue I18n::MissingTranslationData
+            I18n.t option2
+          end
+        end
+
         @flexible_date_errors ||= {}
         if value.blank?
-          @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.empty")
-          @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.empty")
+          @flexible_date_errors["#{field}".to_sym] = try_t.call(
+            "flexible_date.messages.without_suffix.empty",
+            "flexible_date.messages.empty")
+          @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
+            "flexible_date.messages.with_suffix.empty",
+            "flexible_date.messages.empty")
         else
           begin
             format = I18n.t("flexible_date.configuration.format")
             self.send("#{field}=", Date.strptime(value, format))
           rescue ArgumentError
             self.send("#{field}=", nil)
-            @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.invalid")
-            @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.invalid")
+            @flexible_date_errors["#{field}".to_sym] = try_t.call(
+              "flexible_date.messages.without_suffix.invalid",
+              "flexible_date.messages.invalid")
+            @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
+              "flexible_date.messages.with_suffix.invalid",
+              "flexible_date.messages.invalid")
           end
         end
       end
