@@ -8,3 +8,10 @@
 
 * support to suffix customization
 
+0.2.0
+
+* date format is defined at locale file
+* dropped :format option from method flexible_date
+* added i18n support for error messages
+* removed deprecated Gem::Specification#has_rdoc= from gem specification
+

@@ -4,19 +4,49 @@ Make ActiveRecord understand any date format you want.
 
 == How to use
 
-Simply do, within your model:
+Within your model, you should do:
 
-    flexible_date :my_date_field, :format => "%d/%m/%Y"
+    flexible_date :my_date_field
 
-The format follows the same pattern used by strptime and strftime. This will
+
+And in config/locales/br.yml (or your native language):
+
+    br:
+      flexible_date:
+        configuration:
+          format: "%d/%m/%Y"
+        messages:
+          with_suffix:
+            invalid: "inválida."
+            empty: "não pode ser vazia."
+          without_suffix:
+            invalid: "inválida."
+            empty: "não pode ser vazia."
+
+
+Or, in a reduced form, when messages for with or without suffix are the same:
+
+    br:
+      flexible_date:
+        configuration:
+          format: "%d/%m/%Y"
+        messages:
+          invalid: "inválida."
+          empty: "não pode ser vazia."
+
+
+Date format follows the same pattern used by strptime and strftime. This will
 generate a my_date_field_flex "property" in which you can enter the date as
 string in the specified format and then the correct date will be stored in
 my_date_field.
 
-Talk is cheap, let's see the code:
+When an error occurs, the "with_suffix" messages are generated for the "flex"
+fields and "without_suffix" messages are generated for the regular ones.
+
+Talk is cheap, let's see the code (given any of the locale files above):
 
     class Event < ActiveRecord::Base
-      flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
+      flexible_date :start_date, :end_date
     end
 
     event = Event.new
@@ -38,10 +68,10 @@ specified format:
 Suffix can be customized:
 
     class Event < ActiveRecord::Base
-      flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
+      flexible_date :judgement_day, :suffix => 'yyz'
 
     event = Event.new
-    event.judgement_day_yyz = "28-02-2011"
+    event.judgement_day_yyz = "28/02/2011"
     event.judgement_day.should == Date.new(2011, 02, 28)
 
 
