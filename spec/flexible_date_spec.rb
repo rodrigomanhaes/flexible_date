@@ -4,13 +4,14 @@ require File.join(File.dirname(__FILE__), 'spec_helper')
 class Event < ActiveRecord::Base
   flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
   flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
-  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }, :blank => true
+  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }
+  flexible_date :another_payday, :blank => true
 end
 
 describe 'flexible date' do
 
   it 'should have the option to be blank' do
-    event = Event.new(:payday_flex => "", :description => "")
+    event = Event.new(:another_payday_flex => "")
     event.valid?.should be_true
   end
 

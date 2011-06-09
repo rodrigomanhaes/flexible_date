@@ -4,7 +4,8 @@ module FlexibleDate
     params.last.kind_of?(Hash) ? (options, fields = params.pop, params) : (options, fields = {}, params)
     suffix = options[:suffix] || "flex"
     condition = options[:if]
-    blank = options[:blank].nil? ? false : options[:blank]
+    blank_data = options[:blank].nil? ? false : options[:blank]
+
     fields.each do |field|
       unless methods.include?(:flexible_date_validations)
         validate :flexible_date_validations
@@ -41,7 +42,7 @@ module FlexibleDate
           @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
             "flexible_date.messages.with_suffix.invalid",
             "flexible_date.messages.invalid")
-        elsif value.blank? and not blank
+        elsif value.blank? and not blank_data
           @flexible_date_errors["#{field}".to_sym] = try_t.call(
             "flexible_date.messages.without_suffix.empty",
             "flexible_date.messages.empty")
@@ -54,7 +55,7 @@ module FlexibleDate
             self.send("#{field}=", Date.strptime(value, format))
           rescue ArgumentError
             self.send("#{field}=", nil)
-            if not blank
+            if not blank_data
               @flexible_date_errors["#{field}".to_sym] = try_t.call(
                 "flexible_date.messages.without_suffix.invalid",
                 "flexible_date.messages.invalid")
