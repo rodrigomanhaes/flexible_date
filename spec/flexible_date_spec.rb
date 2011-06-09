@@ -10,7 +10,6 @@ end
 describe 'flexible date' do
 
   context 'should respond to the conditions params' do
-
     before(:each) { I18n.locale = :br }
 
     it "when the condition isn't satisfied" do
@@ -29,7 +28,7 @@ describe 'flexible date' do
 
   end
 
-  describe 'suffixes' do
+  context 'suffixes' do
     it '_flex by default' do
       event = Event.new
       event.should respond_to(:start_date_flex)
