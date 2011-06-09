@@ -34,14 +34,14 @@ module FlexibleDate
         end
 
         @flexible_date_errors ||= {}
-        if condition and not condition.call(self)
+        if not condition.nil? and not condition.call(self)
           @flexible_date_errors["#{field}".to_sym] = try_t.call(
             "flexible_date.messages.without_suffix.invalid",
             "flexible_date.messages.invalid")
           @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
             "flexible_date.messages.with_suffix.invalid",
             "flexible_date.messages.invalid")
-    elsif value.blank? and not blank
+        elsif value.blank? and not blank
           @flexible_date_errors["#{field}".to_sym] = try_t.call(
             "flexible_date.messages.without_suffix.empty",
             "flexible_date.messages.empty")
@@ -54,12 +54,14 @@ module FlexibleDate
             self.send("#{field}=", Date.strptime(value, format))
           rescue ArgumentError
             self.send("#{field}=", nil)
-            @flexible_date_errors["#{field}".to_sym] = try_t.call(
-              "flexible_date.messages.without_suffix.invalid",
-              "flexible_date.messages.invalid")
-            @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
-              "flexible_date.messages.with_suffix.invalid",
-              "flexible_date.messages.invalid")
+            if not blank
+              @flexible_date_errors["#{field}".to_sym] = try_t.call(
+                "flexible_date.messages.without_suffix.invalid",
+                "flexible_date.messages.invalid")
+              @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
+                "flexible_date.messages.with_suffix.invalid",
+                "flexible_date.messages.invalid")
+            end
           end
         end
       end
