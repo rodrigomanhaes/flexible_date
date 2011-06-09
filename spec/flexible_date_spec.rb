@@ -4,9 +4,31 @@ require File.join(File.dirname(__FILE__), 'spec_helper')
 class Event < ActiveRecord::Base
   flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
   flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
+  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| not n.description.empty? }
 end
 
 describe 'flexible date' do
+
+  context 'should respond to the conditions params' do
+
+    before(:each) { I18n.locale = :br }
+
+    it "when the condition isn't satisfied" do
+      event = Event.new(:description => "")
+      event.payday_flex = "20/05/2011"
+      event.valid?.should be_false
+      event.errors[:payday_flex].should == ["inválida."]
+      event.errors[:payday].should == ["inválida."]
+    end
+
+    it 'when the condition is satisfied' do
+      event = Event.new(:description => "some description")
+      event.payday_flex = "20/05/2011"
+      event.valid?.should be_true
+    end
+
+  end
+
   describe 'suffixes' do
     it '_flex by default' do
       event = Event.new

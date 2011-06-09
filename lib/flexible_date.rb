@@ -4,6 +4,7 @@ module FlexibleDate
     options, fields = params.pop, params
     format = options[:format]
     suffix = options[:suffix] || "flex"
+    condition = options[:if]
     fields.each do |field|
       unless methods.include?(:flexible_date_validations)
         validate :flexible_date_validations
@@ -24,7 +25,10 @@ module FlexibleDate
 
       define_method "#{field}_#{suffix}=" do |value|
         @flexible_date_errors ||= {}
-        if value.blank?
+        if condition and not condition.call(self)
+          @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.invalid")
+          @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.invalid")
+        elsif value.blank? or (condition and not condition.call(self))
           @flexible_date_errors["#{field}".to_sym] = I18n.t("flexible_date.messages.without_suffix.empty")
           @flexible_date_errors["#{field}_#{suffix}".to_sym] = I18n.t("flexible_date.messages.with_suffix.empty")
         else
