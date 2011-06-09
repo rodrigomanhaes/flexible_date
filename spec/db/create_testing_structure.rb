@@ -6,6 +6,7 @@ class CreateTestingStructure < ActiveRecord::Migration
       t.date :start_date
       t.date :end_date
       t.date :judgement_day
+      t.date :payday
     end
   end
 

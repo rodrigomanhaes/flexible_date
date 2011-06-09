@@ -2,12 +2,48 @@
 require File.join(File.dirname(__FILE__), 'spec_helper')
 
 class Event < ActiveRecord::Base
-  flexible_date :start_date, :end_date
-  flexible_date :judgement_day, :suffix => 'yyz'
+  flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
+  flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
+  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }, :blank => true
 end
 
 describe 'flexible date' do
-  describe 'suffixes' do
+
+  it 'should have the option to be blank' do
+    event = Event.new(:payday_flex => "", :description => "")
+    event.valid?.should be_true
+  end
+
+  context 'should respond to the conditions params' do
+    before(:each) { I18n.locale = :br }
+
+    context "when the condition isn't satisfied" do
+      before(:each) { @event = Event.new(:description => "some description") }
+
+      it 'with empty date' do
+        @event.payday_flex = ""
+        @event.valid?.should be_false
+        @event.errors[:payday_flex].should == ["inválida."]
+        @event.errors[:payday].should == ["inválida."]
+      end
+
+      it 'without empty date' do
+        @event.payday_flex = "20/05/2011"
+        @event.valid?.should be_false
+        @event.errors[:payday_flex].should == ["inválida."]
+        @event.errors[:payday].should == ["inválida."]
+      end
+    end
+
+    it 'when the condition is satisfied' do
+      event = Event.new(:description => "")
+      event.payday_flex = "20/05/2011"
+      event.valid?.should be_true
+    end
+
+  end
+
+  context 'suffixes' do
     it '_flex by default' do
       event = Event.new
       event.should respond_to(:start_date_flex)
