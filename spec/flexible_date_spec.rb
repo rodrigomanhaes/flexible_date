@@ -4,12 +4,12 @@ require File.join(File.dirname(__FILE__), 'spec_helper')
 class Event < ActiveRecord::Base
   flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
   flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
-  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }, :blank => true
+  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }
 end
 
 describe 'flexible date' do
 
-  it 'should have the option to be blank' do
+  it 'allows blank values' do
     event = Event.new(:payday_flex => "", :description => "")
     event.valid?.should be_true
   end
@@ -127,14 +127,6 @@ describe 'flexible date' do
         event.errors[:start_date_flex].should == ["inválida."]
         event.errors[:start_date].should == ["inválida."]
       end
-
-      it 'empty date' do
-        event = Event.new
-        event.start_date_flex = ""
-        event.valid?.should be_false
-        event.errors[:start_date_flex].should == ["não pode ser vazia."]
-        event.errors[:start_date].should == ["não pode ser vazia."]
-      end
     end
 
     context 'defaul_locale en' do
@@ -146,14 +138,6 @@ describe 'flexible date' do
         event.valid?.should be_false
         event.errors[:start_date_flex].should == ["invalid."]
         event.errors[:start_date].should == ["invalid."]
-      end
-
-      it 'empty date' do
-        event = Event.new
-        event.start_date_flex = ""
-        event.valid?.should be_false
-        event.errors[:start_date_flex].should == ["can't be empty."]
-        event.errors[:start_date].should == ["can't be empty."]
       end
     end
   end

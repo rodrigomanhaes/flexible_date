@@ -5,8 +5,6 @@ br:
     messages:
       with_suffix:
         invalid: "inválida."
-        empty: "não pode ser vazia."
       without_suffix:
         invalid: "inválida."
-        empty: "não pode ser vazia."
 
