@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name = 'flexible_date'
-  s.version = '0.2.0'
-  s.date = %q{2011-05-21}
+  s.version = '0.3.0'
+  s.date = %q{2011-06-10}
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
   s.author = 'Rodrigo Manhães'
