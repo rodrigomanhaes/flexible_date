@@ -4,6 +4,7 @@ module FlexibleDate
     params.last.kind_of?(Hash) ? (options, fields = params.pop, params) : (options, fields = {}, params)
     suffix = options[:suffix] || "flex"
     condition = options[:if]
+
     fields.each do |field|
       unless methods.include?(:flexible_date_validations)
         validate :flexible_date_validations
@@ -33,7 +34,7 @@ module FlexibleDate
         end
 
         @flexible_date_errors ||= {}
-        if not condition.nil? and not condition.call(self)
+        if condition and not condition.call(self)
           @flexible_date_errors["#{field}".to_sym] = try_t.call(
             "flexible_date.messages.without_suffix.invalid",
             "flexible_date.messages.invalid")
