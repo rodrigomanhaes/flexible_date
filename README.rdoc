@@ -18,10 +18,8 @@ And in config/locales/br.yml (or your native language):
         messages:
           with_suffix:
             invalid: "inválida."
-            empty: "não pode ser vazia."
           without_suffix:
             invalid: "inválida."
-            empty: "não pode ser vazia."
 
 
 Or, in a reduced form, when messages for with or without suffix are the same:
@@ -32,7 +30,6 @@ Or, in a reduced form, when messages for with or without suffix are the same:
           format: "%d/%m/%Y"
         messages:
           invalid: "inválida."
-          empty: "não pode ser vazia."
 
 
 Date format follows the same pattern used by strptime and strftime. This will
@@ -69,10 +66,23 @@ Suffix can be customized:
 
     class Event < ActiveRecord::Base
       flexible_date :judgement_day, :suffix => 'yyz'
+    end
 
     event = Event.new
     event.judgement_day_yyz = "28/02/2011"
     event.judgement_day.should == Date.new(2011, 02, 28)
+
+
+flexible_date supports conditional execution through the :if option. The object
+itself is passed as parameter to the block:
+
+    class Event < ActiveRecord::Base
+      flexible_date :payday, :if => Proc.new { |n| n.description.blank? }
+    end
+
+    event = Event.new(:description => "some content")
+    event.payday_flex = "20/05/2011"
+    event.should_not be_valid
 
 
 == How to install
