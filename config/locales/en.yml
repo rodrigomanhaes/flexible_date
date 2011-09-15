@@ -4,5 +4,4 @@ en:
       format: "%d-%m-%Y"
     messages:
       invalid: "invalid."
-      empty: "can't be empty."
 

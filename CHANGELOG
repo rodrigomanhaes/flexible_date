@@ -15,3 +15,8 @@
 * added i18n support for error messages
 * removed deprecated Gem::Specification#has_rdoc= from gem specification
 
+0.3.0
+
+* allow blank fields
+* support to :if option
+

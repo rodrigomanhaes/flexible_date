@@ -5,14 +5,12 @@ class Event < ActiveRecord::Base
   flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
   flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
   flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }
-  flexible_date :another_payday, :blank => true
 end
 
 describe 'flexible date' do
-
-  it 'should have the option to be blank' do
-    event = Event.new(:another_payday_flex => "")
-    event.valid?.should be_true
+  it 'allows blank values' do
+    event = Event.new(:payday_flex => "", :description => "")
+    event.should be_valid
   end
 
   context 'should respond to the conditions params' do
@@ -23,14 +21,14 @@ describe 'flexible date' do
 
       it 'with empty date' do
         @event.payday_flex = ""
-        @event.valid?.should be_false
+        @event.should_not be_valid
         @event.errors[:payday_flex].should == ["inválida."]
         @event.errors[:payday].should == ["inválida."]
       end
 
       it 'without empty date' do
         @event.payday_flex = "20/05/2011"
-        @event.valid?.should be_false
+        @event.should_not be_valid
         @event.errors[:payday_flex].should == ["inválida."]
         @event.errors[:payday].should == ["inválida."]
       end
@@ -39,9 +37,8 @@ describe 'flexible date' do
     it 'when the condition is satisfied' do
       event = Event.new(:description => "")
       event.payday_flex = "20/05/2011"
-      event.valid?.should be_true
+      event.should be_valid
     end
-
   end
 
   context 'suffixes' do
@@ -124,17 +121,9 @@ describe 'flexible date' do
       it 'invalid date' do
         event = Event.new
         event.start_date_flex = "31/04/2010"
-        event.valid?.should be_false
+        event.should_not be_valid
         event.errors[:start_date_flex].should == ["inválida."]
         event.errors[:start_date].should == ["inválida."]
-      end
-
-      it 'empty date' do
-        event = Event.new
-        event.start_date_flex = ""
-        event.valid?.should be_false
-        event.errors[:start_date_flex].should == ["não pode ser vazia."]
-        event.errors[:start_date].should == ["não pode ser vazia."]
       end
     end
 
@@ -144,20 +133,11 @@ describe 'flexible date' do
       it 'invalid date' do
         event = Event.new
         event.start_date_flex = "31/04/2010"
-        event.valid?.should be_false
+        event.should_not be_valid
         event.errors[:start_date_flex].should == ["invalid."]
         event.errors[:start_date].should == ["invalid."]
       end
-
-      it 'empty date' do
-        event = Event.new
-        event.start_date_flex = ""
-        event.valid?.should be_false
-        event.errors[:start_date_flex].should == ["can't be empty."]
-        event.errors[:start_date].should == ["can't be empty."]
-      end
     end
   end
-
 end
 
