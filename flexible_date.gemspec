@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name = 'flexible_date'
-  s.version = '0.3.0'
-  s.date = %q{2011-06-10}
+  s.version = '0.4.0'
+  s.date = %q{2011-09-15}
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
   s.author = 'Rodrigo Manhães'
@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.files = Dir.glob('lib/**/*.rb') + %w(README.rdoc LICENSE.txt)
-  s.add_dependency('activerecord', '~> 3.0.0')
-  s.add_development_dependency('sqlite3-ruby', '~> 1.3.0')
+  s.add_dependency('activerecord', '~> 3.1.0')
+  s.add_development_dependency('sqlite3-ruby', '~> 1.3.3')
   s.add_development_dependency('rspec', '~> 2.6.0')
 end
 

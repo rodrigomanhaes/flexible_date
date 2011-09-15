@@ -87,9 +87,14 @@ itself is passed as parameter to the block:
 
 == How to install
 
-Just run:
+For Rails 3.1, just run:
 
     gem install flexible_date
+
+
+For Rails 3.0:
+
+    gem install flexible_date -v=0.3.0
 
 
 == Do you know a better/standard solution?

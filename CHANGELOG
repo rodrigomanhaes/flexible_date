@@ -20,3 +20,8 @@
 * allow blank fields
 * support to :if option
 
+
+0.4.0
+
+* upgraded to Rails 3.1
+
