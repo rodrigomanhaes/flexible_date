@@ -1,5 +1,6 @@
 .rvmrc
 *.gem
+Gemfile.lock
 
 # rcov generated
 coverage
