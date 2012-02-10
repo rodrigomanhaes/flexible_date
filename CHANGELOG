@@ -25,3 +25,8 @@
 
 * upgraded to Rails 3.1
 
+
+0.4.1
+
+* dependency set to any ActiveRecord 3, rather than a specific version as 3.1 or
+  3.2
