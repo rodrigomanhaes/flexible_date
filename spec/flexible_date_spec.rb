@@ -24,8 +24,8 @@ describe 'flexible date' do
       it 'with empty date' do
         @event.payday_flex = ""
         @event.should_not be_valid
-        @event.errors[:payday_flex].should == ["inválida."]
         @event.errors[:payday].should == ["inválida."]
+        @event.errors[:payday_flex].should == ["inválida."]
       end
 
       it 'without empty date' do
