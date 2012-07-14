@@ -2,6 +2,8 @@
 *.gem
 Gemfile.lock
 
+spec/dummy/log
+
 # rcov generated
 coverage
 
@@ -44,4 +46,3 @@ pkg
 #
 # For vim:
 #*.swp
-
