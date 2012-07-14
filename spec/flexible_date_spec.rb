@@ -16,6 +16,7 @@ describe 'flexible date' do
 
   context 'should respond to the conditions params' do
     before(:each) { I18n.locale = :br }
+    after(:each) { I18n.locale = :en }
 
     context "when the condition isn't satisfied" do
       before(:each) { @event = Event.new(:description => "some description") }
