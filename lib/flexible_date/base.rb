@@ -19,15 +19,16 @@ module FlexibleDate
           end
         end
 
-        attr_accessible "#{field}_#{suffix}"
+        field_with_suffix = "#{field}_#{suffix}"
+        attr_accessible field_with_suffix
 
-        define_method "#{field}_#{suffix}" do
+        define_method "#{field_with_suffix}" do
           format = I18n.t("flexible_date.configuration.format")
           date = self.send("#{field}")
           date.try(:strftime, format)
         end
 
-        define_method "#{field}_#{suffix}=" do |value|
+        define_method "#{field_with_suffix}=" do |value|
           try_t = lambda do |option1, option2|
             begin
               I18n.t option1, :raise => true
@@ -41,7 +42,7 @@ module FlexibleDate
             @flexible_date_errors["#{field}".to_sym] = try_t.call(
               "flexible_date.messages.without_suffix.invalid",
               "flexible_date.messages.invalid")
-            @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
+            @flexible_date_errors["#{field_with_suffix}".to_sym] = try_t.call(
               "flexible_date.messages.with_suffix.invalid",
               "flexible_date.messages.invalid")
           else
@@ -53,7 +54,7 @@ module FlexibleDate
               @flexible_date_errors["#{field}".to_sym] = try_t.call(
                 "flexible_date.messages.without_suffix.invalid",
                 "flexible_date.messages.invalid")
-              @flexible_date_errors["#{field}_#{suffix}".to_sym] = try_t.call(
+              @flexible_date_errors["#{field_with_suffix}".to_sym] = try_t.call(
                 "flexible_date.messages.with_suffix.invalid",
                 "flexible_date.messages.invalid")
             end
