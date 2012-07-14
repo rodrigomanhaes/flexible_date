@@ -18,6 +18,8 @@ module FlexibleDate
         end
       end
 
+      attr_accessible "#{field}_#{suffix}"
+
       define_method "#{field}_#{suffix}" do
         format = I18n.t("flexible_date.configuration.format")
         date = self.send("#{field}")
@@ -61,4 +63,3 @@ module FlexibleDate
 end
 
 ActiveRecord::Base.extend(FlexibleDate)
-

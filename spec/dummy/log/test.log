@@ -1,0 +1,646 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:01:06 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (12.2ms)
+  Rendered events/new.html.erb within layouts/application (44.2ms)
+Completed 500 Internal Server Error in 66ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:01:19 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.2ms)
+  Rendered events/new.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 63ms (Views: 50.4ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:01:28 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.9ms)
+  Rendered events/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 63ms (Views: 50.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:01:28 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:04:20 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (4.3ms)
+  Rendered events/new.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:04:20 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:04:31 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (3.9ms)
+  Rendered events/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:04:31 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:07:42 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.2ms)
+  Rendered events/new.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 67ms (Views: 54.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:07:42 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered events/_form.html.erb (2.4ms)
+  Rendered events/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:08:46 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.3ms)
+  Rendered events/new.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 67ms (Views: 54.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:08:46 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered events/_form.html.erb (2.5ms)
+  Rendered events/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:09:27 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.9ms)
+  Rendered events/new.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 66ms (Views: 53.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:09:27 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered events/_form.html.erb (2.3ms)
+  Rendered events/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:11:30 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.7ms)
+  Rendered events/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 65ms (Views: 51.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:11:30 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered events/_form.html.erb (2.5ms)
+  Rendered events/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:12:09 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.0ms)
+  Rendered events/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 63ms (Views: 50.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:12:10 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"21-12-2012", "payday_flex"=>"01-31-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:14:17 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.1ms)
+  Rendered events/new.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 64ms (Views: 50.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:14:17 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"2012-21/12", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:14:44 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.1ms)
+  Rendered events/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 64ms (Views: 51.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:14:44 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"2012-21/12", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:15:02 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.1ms)
+  Rendered events/new.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 64ms (Views: 51.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:15:02 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"2012-21/12", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:15:39 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.1ms)
+  Rendered events/new.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 64ms (Views: 50.7ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:15:40 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20/01/2012", "end_date_flex"=>"29/02/2012", "judgement_day_yyz"=>"2012-21/12", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:23:17 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.9ms)
+  Rendered events/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 63ms (Views: 50.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:23:17 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20-01-2012", "end_date_flex"=>"29-02-2012", "judgement_day_yyz"=>"20-12-2012", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.9ms)[0m  [1mINSERT INTO "events" ("created_at", "description", "end_date", "judgement_day", "payday", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 14 Jul 2012 23:23:17 UTC +00:00], ["description", nil], ["end_date", Wed, 29 Feb 2012], ["judgement_day", Thu, 20 Dec 2012], ["payday", Tue, 31 Jan 2012], ["start_date", Fri, 20 Jan 2012], ["updated_at", Sat, 14 Jul 2012 23:23:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events/1
+Completed 302 Found in 36ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2012-07-14 20:23:17 -0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered events/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:23:45 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.8ms)
+  Rendered events/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 63ms (Views: 50.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:23:45 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20-01-2012", "end_date_flex"=>"29-02-2012", "judgement_day_yyz"=>"20-12-2012", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.8ms)[0m  [1mINSERT INTO "events" ("created_at", "description", "end_date", "judgement_day", "payday", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 14 Jul 2012 23:23:45 UTC +00:00], ["description", nil], ["end_date", Wed, 29 Feb 2012], ["judgement_day", Thu, 20 Dec 2012], ["payday", Tue, 31 Jan 2012], ["start_date", Fri, 20 Jan 2012], ["updated_at", Sat, 14 Jul 2012 23:23:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events/1
+Completed 302 Found in 36ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2012-07-14 20:23:45 -0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered events/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:24:01 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (7.8ms)
+  Rendered events/new.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 63ms (Views: 50.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:24:01 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20-01-2012", "end_date_flex"=>"29-02-2012", "judgement_day_yyz"=>"20-12-2012", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.7ms)[0m  [1mINSERT INTO "events" ("created_at", "description", "end_date", "judgement_day", "payday", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 14 Jul 2012 23:24:01 UTC +00:00], ["description", nil], ["end_date", Wed, 29 Feb 2012], ["judgement_day", Thu, 20 Dec 2012], ["payday", Tue, 31 Jan 2012], ["start_date", Fri, 20 Jan 2012], ["updated_at", Sat, 14 Jul 2012 23:24:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events/1
+Completed 302 Found in 36ms (ActiveRecord: 31.8ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2012-07-14 20:24:01 -0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered events/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/events/new" for 127.0.0.1 at 2012-07-14 20:24:06 -0300
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (3.8ms)
+  Rendered events/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2012-07-14 20:24:06 -0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"start_date_flex"=>"20-01-2012", "end_date_flex"=>"29-02-2012", "judgement_day_yyz"=>"20-12-2012", "payday_flex"=>"31-01-2012"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (32.0ms)[0m  [1mINSERT INTO "events" ("created_at", "description", "end_date", "judgement_day", "payday", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 14 Jul 2012 23:24:06 UTC +00:00], ["description", nil], ["end_date", Wed, 29 Feb 2012], ["judgement_day", Thu, 20 Dec 2012], ["payday", Tue, 31 Jan 2012], ["start_date", Fri, 20 Jan 2012], ["updated_at", Sat, 14 Jul 2012 23:24:06 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events/1
+Completed 302 Found in 36ms (ActiveRecord: 32.2ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2012-07-14 20:24:06 -0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered events/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

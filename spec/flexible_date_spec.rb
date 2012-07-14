@@ -1,16 +1,17 @@
 # -*- encoding : utf-8 -*-
 require File.join(File.dirname(__FILE__), 'spec_helper')
 
-class Event < ActiveRecord::Base
-  flexible_date :start_date, :end_date, :format => "%d/%m/%Y"
-  flexible_date :judgement_day, :format => '%d-%m-%Y', :suffix => 'yyz'
-  flexible_date :payday, :format => '%d/%m/%Y', :if => Proc.new { |n| n.description.blank? }
-end
-
 describe 'flexible date' do
   it 'allows blank values' do
     event = Event.new(:payday_flex => "", :description => "")
     event.should be_valid
+  end
+
+  it 'allows mass assignment of suffixed attributes' do
+    expect {
+      Event.new(payday_flex: nil, judgement_day_yyz: nil,
+                start_date_flex: nil, end_date_flex: nil)
+    }.to_not raise_error ActiveModel::MassAssignmentSecurity::Error
   end
 
   context 'should respond to the conditions params' do
@@ -140,4 +141,3 @@ describe 'flexible date' do
     end
   end
 end
-

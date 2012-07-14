@@ -1,0 +1,11 @@
+<%= form_for @event do |f| %>
+  <%= f.label :start_date_flex, 'Start date' %>
+  <%= f.text_field :start_date_flex %>
+  <%= f.label :end_date_flex, 'End date' %>
+  <%= f.text_field :end_date_flex %>
+  <%= f.label :judgement_day_yyz, 'Judgement day' %>
+  <%= f.text_field :judgement_day_yyz %>
+  <%= f.label :payday_flex, 'Payday' %>
+  <%= f.text_field :payday_flex %>
+  <%= f.submit 'Save' %>
+<% end %>
