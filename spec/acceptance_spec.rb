@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'flexible date' do
+feature 'flexible date on rails' do
   before :each  do
     @start_date = { object: Date.new(2012, 1, 20), string: '20-01-2012' }
     @end_date = { object: Date.new(2012, 2, 29), string: '29-02-2012' }
