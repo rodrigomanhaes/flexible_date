@@ -1,5 +1,8 @@
 = flexible_date
 
+{<img src="https://secure.travis-ci.org/rodrigomanhaes/flexible_date.png"/>}[http://travis-ci.org/rodrigomanhaes/flexible_date]
+{<img src="https://gemnasium.com/rodrigomanhaes/flexible_date.png"/>}[https://gemnasium.com/rodrigomanhaes/flexible_date]
+
 Make ActiveRecord understand any date format you want.
 
 == How to use
@@ -109,4 +112,3 @@ No, default select fields, separated by day, month and year are not a solution.
 == Copyright
 
 Copyright (c) 2011 Rodrigo Manhães. See LICENSE.txt for further details.
-
