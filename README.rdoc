@@ -90,14 +90,15 @@ itself is passed as parameter to the block:
 
 == How to install
 
-For Rails 3.1, just run:
+Just run:
 
     gem install flexible_date
 
 
-For Rails 3.0:
+== How to contribute
 
-    gem install flexible_date -v=0.3.0
+Write tests, implement your contrib, pass the tests, make a pull request. Tests
+are run using RSpec.
 
 
 == Do you know a better/standard solution?
