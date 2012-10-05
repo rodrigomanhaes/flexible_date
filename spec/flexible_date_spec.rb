@@ -141,4 +141,22 @@ describe 'flexible date' do
       end
     end
   end
+
+  context 'for datetime fields' do
+    before(:each) { I18n.locale = :en }
+
+    it 'valid datetime' do
+      event = Event.new
+      event.created_at_flex = "30-04-2010 22:15:59"
+      event.should be_valid
+    end
+
+    it 'invalid datetime' do
+      event = Event.new
+      event.created_at_flex = "30-04-2010"
+      event.should_not be_valid
+      event.errors[:created_at_flex].should == ["invalid."]
+      event.errors[:created_at].should == ["invalid."]
+    end
+  end
 end

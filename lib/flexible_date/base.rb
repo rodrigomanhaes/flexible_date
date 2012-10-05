@@ -47,8 +47,14 @@ module FlexibleDate
               "flexible_date.messages.invalid")
           else
             begin
-              format = I18n.t("flexible_date.configuration.format")
-              self.send("#{field}=", value.blank? ? "" : Date.strptime(value, format))
+              if self.class.columns_hash[field.to_s].type == :datetime
+                class_name = DateTime
+                format = I18n.t("flexible_date.configuration.datetime_format")
+              else
+                class_name = Date
+                format = I18n.t("flexible_date.configuration.format")
+              end
+              self.send("#{field}=", value.blank? ? "" : class_name.strptime(value, format))
             rescue ArgumentError
               self.send("#{field}=", nil)
               @flexible_date_errors["#{field}".to_sym] = try_t.call(
