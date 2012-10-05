@@ -9,7 +9,7 @@ describe 'flexible date' do
 
   it 'allows mass assignment of suffixed attributes' do
     expect {
-      Event.new(payday_flex: nil, judgement_day_yyz: nil,
+      Event.new(payday_flex: nil, judgement_day_yyz: nil, created_at_flex: nil,
                 start_date_flex: nil, end_date_flex: nil)
     }.to_not raise_error ActiveModel::MassAssignmentSecurity::Error
   end
@@ -24,8 +24,8 @@ describe 'flexible date' do
       it 'with empty date' do
         @event.payday_flex = ""
         @event.should_not be_valid
-        @event.errors[:payday_flex].should == ["inválida."]
         @event.errors[:payday].should == ["inválida."]
+        @event.errors[:payday_flex].should == ["inválida."]
       end
 
       it 'without empty date' do
@@ -50,6 +50,7 @@ describe 'flexible date' do
       event.should respond_to(:start_date_flex=)
       event.should respond_to(:end_date_flex)
       event.should respond_to(:end_date_flex=)
+      event.should respond_to(:created_at_flex=)
     end
 
     it 'can be customized' do
@@ -139,6 +140,24 @@ describe 'flexible date' do
         event.errors[:start_date_flex].should == ["invalid."]
         event.errors[:start_date].should == ["invalid."]
       end
+    end
+  end
+
+  context 'for datetime fields' do
+    before(:each) { I18n.locale = :en }
+
+    it 'valid datetime' do
+      event = Event.new
+      event.created_at_flex = "30-04-2010 22:15:59"
+      event.should be_valid
+    end
+
+    it 'invalid datetime' do
+      event = Event.new
+      event.created_at_flex = "30-04-2010"
+      event.should_not be_valid
+      event.errors[:created_at_flex].should == ["invalid."]
+      event.errors[:created_at].should == ["invalid."]
     end
   end
 end
