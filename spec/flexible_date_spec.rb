@@ -9,7 +9,7 @@ describe 'flexible date' do
 
   it 'allows mass assignment of suffixed attributes' do
     expect {
-      Event.new(payday_flex: nil, judgement_day_yyz: nil,
+      Event.new(payday_flex: nil, judgement_day_yyz: nil, created_at_flex: nil,
                 start_date_flex: nil, end_date_flex: nil)
     }.to_not raise_error ActiveModel::MassAssignmentSecurity::Error
   end
@@ -50,6 +50,7 @@ describe 'flexible date' do
       event.should respond_to(:start_date_flex=)
       event.should respond_to(:end_date_flex)
       event.should respond_to(:end_date_flex=)
+      event.should respond_to(:created_at_flex=)
     end
 
     it 'can be customized' do

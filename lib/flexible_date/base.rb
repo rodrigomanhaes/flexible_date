@@ -23,7 +23,11 @@ module FlexibleDate
         attr_accessible field_with_suffix
 
         define_method "#{field_with_suffix}" do
-          format = I18n.t("flexible_date.configuration.format")
+          if self.class.columns_hash[field.to_s].type == :datetime
+            format = I18n.t("flexible_date.configuration.datetime_format")
+          else
+            format = I18n.t("flexible_date.configuration.format")
+          end
           date = self.send("#{field}")
           date.try(:strftime, format)
         end
