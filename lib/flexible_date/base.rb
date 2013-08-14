@@ -20,7 +20,6 @@ module FlexibleDate
         end
 
         field_with_suffix = "#{field}_#{suffix}"
-        attr_accessible field_with_suffix
 
         define_method "#{field_with_suffix}" do
           format = I18n.t("flexible_date.configuration.format")
